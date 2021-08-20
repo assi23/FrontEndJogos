@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Listar Jogos</title>
+    <script src="../js/main.js"></script>
 </head>
 <body>
     <header>
@@ -14,9 +15,10 @@
         </nav>
     </header> 
     <body>
-        <table>
+        <table id="tableJogo">
             <thead>
                 <tr>
+                    <th>Id</th>
                     <th>Nome</th>
                     <th>Descrição</th>
                     <th>Lançamento</th>
@@ -26,5 +28,10 @@
             </tbody>
         </table>
     </body>
+    <script>
+         window.onload=function(){
+            listAll();
+        }
+    </script>
 </body>
 </html>

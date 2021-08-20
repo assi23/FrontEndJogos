@@ -14,18 +14,21 @@
         </nav>
     </header> 
     <body>
-        <form action="POST">
-            <label for="name">Nome</label> <input type="text" id="name" name="name">
-            <label for="description">Descrição</label> <input type="text" id="description" name="description">
-            <label for="release">Lançamento</label> <input type="text" id="release" name="release">
-            <button type="submit" onclick="Save()">Salvar</button>
-        </form>
+            <label for="id">Id</label> 
+            <input type="text" id="id" name="id" readonly>
+            <label for="name">Nome</label> 
+            <input type="text" id="name" name="name">
+            <label for="desc">Descrição</label> 
+            <input type="text" id="desc" name="desc">
+            <label for="release">Lançamento</label> 
+            <input type="text" id="release" name="release">
+            <input type="submit" value="Salvar" onclick="cadastrar()">
     </body>
     <footer>
         <div>
             <p>Todos os direitos reservados ao BrksEdu do Labs e do Jesus do Labs</p>
         </div>
     </footer>
-    <script src="main.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 </html>
